@@ -22,16 +22,16 @@ public class QueryProcessor {
             Integer i = Integer.parseInt(parts[2]) + Integer.parseInt(parts[4]);
             return i.toString();
         }
-        if (query.toLowerCase().contains("minus")) {
-            String[] parts = query.split(" ");
-            Integer i = Integer.parseInt(parts[2]) - Integer.parseInt(parts[4]);
-            return i.toString();
-        }
-        if (query.toLowerCase().contains("multiplied")) {
-            String[] parts = query.split(" ");
-            Integer i = Integer.parseInt(parts[2]) * Integer.parseInt(parts[5]);
-            return i.toString();
-        }
+        // if (query.toLowerCase().contains("minus")) {
+        //     String[] parts = query.split(" ");
+        //     Integer i = Integer.parseInt(parts[2]) - Integer.parseInt(parts[4]);
+        //     return i.toString();
+        // }
+        // if (query.toLowerCase().contains("multiplied")) {
+        //     String[] parts = query.split(" ");
+        //     Integer i = Integer.parseInt(parts[2]) * Integer.parseInt(parts[5]);
+        //     return i.toString();
+        // }
         // if (query.toLowerCase().contains("largest")) {
         //     String[] parts = query.split(" ");
 
