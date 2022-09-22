@@ -43,6 +43,11 @@ public class QueryProcessorTest {
     public void knowsMult() throws Exception {
         assertThat(queryProcessor.process("what is 10 multiplied by 5"), containsString("50"));
     }
+    @Test
+    public void knowsMinus() throws Exception {
+        assertThat(queryProcessor.process("what is 10 minus 5"), containsString("5"));
+    }
+
 
     @Test
     public void knowsLargest() throws Exception {
