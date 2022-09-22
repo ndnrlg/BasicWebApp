@@ -23,19 +23,14 @@ public class QueryProcessorTest {
     public void knowsAboutClass() throws Exception {
         assertThat(queryProcessor.process("class"), containsString("17213"));
     }
-    @Test
-    public void knowsAboutName() throws Exception {
-        assertThat(queryProcessor.process("your name"), containsString("NNCKHR"));
-    }
-
-    @Test
+     @Test
     public void isNotCaseSensitive() throws Exception {
         assertThat(queryProcessor.process("shakespeare"), containsString("playwright"));
     }
 
     @Test
     public void knowsTeamName() throws Exception {
-        assertThat(queryProcessor.process("what is your name"), containsString("MyTeam"));
+        assertThat(queryProcessor.process("what is your name"), containsString("NNCKHR"));
     }
 
 }

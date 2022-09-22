@@ -9,13 +9,13 @@ public class QueryProcessor {
                     "writer in the English language and the world's pre-eminent dramatist.";
         }
         if (query.toLowerCase().contains("name")) {
+            if (query.toLowerCase().contains("your")) {
+                return "NNCKHR";
+            }
             return "MyTeam";
         }
         if (query.toLowerCase().contains("class")) {
             return "17213";
-        }
-        if (query.toLowerCase().contains("your name")) {
-            return "NNCKHR";
         }
         return "";
     }
