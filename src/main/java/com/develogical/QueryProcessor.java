@@ -17,6 +17,11 @@ public class QueryProcessor {
         if (query.toLowerCase().contains("class")) {
             return "17213";
         }
+        if (query.toLowerCase().contains("plus")) {
+            String[] parts = query.split(" ");
+            Integer i = Integer.parseInt(parts[2]) + Integer.parseInt(parts[4]);
+            return i.toString();
+        }
         return "";
     }
 }
